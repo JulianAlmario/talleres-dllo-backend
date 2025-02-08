@@ -14,7 +14,7 @@ function convertidorTemp(C){
     }
  }
  
- function MejorParidad(n){
+ function mejorParidad(n){
     if(n%2===0){
      return true;
     }else{
@@ -22,7 +22,7 @@ function convertidorTemp(C){
     }
  }
  
- function PeorParidad(n){
+ function peorParidad(n){
      const list=[1,2,3,4,5,6,7,8,9,10];
      if(list.includes(n)){
         if(n!==1 && n!==3 && n!==5 && n!==7 && n!==9){
@@ -57,7 +57,7 @@ function convertidorTemp(C){
  
  //punto3
  const n1=prompt("Ingresa un numero:");
- const Paridad=MejorParidad(n1);
+ const Paridad=mejorParidad(n1);
  if(Paridad){
      console.log("El numero es par");
  }else{
@@ -68,7 +68,7 @@ function convertidorTemp(C){
  const n2=prompt("Ingresa un numero del 1 al 10:");
  
  if(n2>0 && n2<11){
-     const Paridad2=PeorParidad(parseInt(n2));
+     const Paridad2=peorParidad(parseInt(n2));
      if(Paridad2){
          
          console.log("El numero es par");
