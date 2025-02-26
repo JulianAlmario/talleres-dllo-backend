@@ -1,51 +1,50 @@
-function findMax(lista){
- let max=lista[0];
- for(let i=1;i<lista.length;i++){
-    if(lista[i]>max){
-        max=lista[i];
+function findMax(list){
+ let max=list[0];
+ for(let i=1;i<list.length;i++){
+    if(list[i]>max){
+        max=list[i];
     }
  }
  return max;
 }
 
-function includes(lista,numero){
-   let incluye=false;
-    for(let i in lista){
-        if(lista[i]===numero){
-            incluye=true;
+function includes(list,number){
+   let includes=false;
+    for(let i in list){
+        if(list[i]===number){
+            includes=true;
         }
     }
-    return incluye;
+    return includes;
 }
 
-function sum(lista){
+function sum(list){
    let sum=0;
-    for(i in lista){
-        sum+=lista[i];
+    for(i in list){
+        sum+=list[i];
     }
 return sum;
 }
 
-function findMin(lista){
-   let min=lista[0];
-    for(let i=1;i<lista.length;i++){
-        if(lista[i]<min){
-            min=lista[i];
+function findMin(list){
+   let min=list[0];
+    for(let i=1;i<list.length;i++){
+        if(list[i]<min){
+            min=list[i];
         }
     }
     return min;
 }
 
-function missingNumbers(lista){
-   let faltantes=[];
-    const min=findMin(lista);
-    const max=findMax(lista);
+function missingNumbers(list){
+   let missing=[];
+    const min=findMin(list);
+    const max=findMax(list);
     for(let i=min;i<=max;i++){
-        if(!includes(lista,i)){
-            faltantes.push(i);
+        if(!includes(list,i)){
+            missing.push(i);
         }
     }
-return faltantes;
+return missing;
 }
-
 
