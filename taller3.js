@@ -34,17 +34,11 @@ function twoSum(lista,numero){
 
 const NRomanos = [
     [1,'I'],
-    [4,'IV'],
     [5,'V'],
-    [9,'IX'],
     [10,'X'],
-    [40,'XL'],
     [50,'L'],
-    [90,'XC'],
     [100,'C'],
-    [400,'CD'],
     [500,'D'],
-    [900,'CM'],
     [1000,'M']
 ];
 
@@ -61,7 +55,6 @@ function conversion(numero){
 
 function conversionRomana(numero){
     let n=0;
-    let sig=0;
     let actual=0;
     while(numero.length>0){
             actual=conversion(numero[0]);
@@ -76,5 +69,6 @@ function conversionRomana(numero){
     }
     return n;
 }
+
 
 
