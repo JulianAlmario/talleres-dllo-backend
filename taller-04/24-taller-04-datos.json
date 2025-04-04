@@ -354,5 +354,14 @@
     "codigo": "200182115",
     "apellido": "CABANA PEREZ",
     "nombre": "KIDMAN"
+  },
+  {
+    "hobbies": [
+      "ajedrez",
+      "programar"
+    ],
+    "codigo": "999",
+    "apellido": "Rodriguez",
+    "nombre": "Ana"
   }
 ]
